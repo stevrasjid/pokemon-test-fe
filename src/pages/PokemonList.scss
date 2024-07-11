@@ -1,0 +1,76 @@
+.icon-size {
+    font-size: 1.5rem;
+}
+
+.detail-wrapper{
+    min-height: 250px;
+    .card {
+      h2 {
+        color: white;
+      }
+
+      position: relative;
+      padding: 2.5rem 1.75rem 1.25rem 1.75rem;
+      border-radius: 25px;
+      overflow: hidden;
+      min-height: inherit;
+      cursor: pointer;
+      
+      &.grass, &.bug {
+        background-color: #48D0B0;
+      }
+  
+      &.fire {
+        background-color: #F76565;
+      }
+      &.water {
+        background-color: #76BDFE;
+      }
+     
+  
+  
+      .background-image-wrapper {
+        position: absolute;
+        bottom: -5%;
+        right: 0;
+        width: 12rem; /* Adjust based on your circle image size */
+        height: 12rem;
+        z-index: 1;
+    
+        .background-image {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 100%; /* Double the width to show half of the circle */
+          height: 100%; /* Double the height to show half of the circle */
+          opacity: 0.2;
+        }
+      }
+      .content-wrapper {
+        z-index: 10;
+        .type {
+          display: flex;
+          p {
+            padding: 8px 25px;
+            border-radius: 20px;
+            color: white;
+            &.grass, &.bug {
+              background-color: #61E0C9
+            }
+            &.fire {
+              background-color: #F88C8B;
+            }
+            &.water {
+              background-color: #8FD1FE;
+            }
+        
+          }
+        }
+      }
+      .image-wrapper{
+        z-index: 10;
+      }
+     
+    }
+  }
+  

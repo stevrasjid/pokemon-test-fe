@@ -1,0 +1,121 @@
+.icon-size {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.container-fluid {
+    min-height: 100vh;
+    padding: 0;
+   
+    &.grass, &.bug {
+        background-color: #48D0B0;
+      }
+  
+      &.fire {
+        background-color: #F76565;
+      }
+      &.water {
+        background-color: #76BDFE;
+      }
+}
+
+h1 {
+    font-weight: bold;
+    color: white;
+    font-size: clamp(2.5em, 5vw, 3.2em) !important;
+
+}
+
+.type {
+    display: flex;
+    
+    p {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: clamp(10px, 8vw, 45px);
+      padding-right: clamp(10px, 8vw, 45px);
+      border-radius: 20px;
+      font-weight: bold;
+      color: white;
+      &.grass, &.bug {
+        background-color: #61E0C9
+      }
+      &.fire {
+        background-color: #F88C8B;
+      }
+      &.water {
+        background-color: #8FD1FE;
+      }
+  
+    }
+  }
+
+.image-wrapper {
+  width: clamp(250px, 40vw, 550px);
+  img {
+    width: inherit;
+  }
+}
+
+.number {
+    margin-left: auto;
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;    
+}
+.pokemon-stats-wrapper{
+    background-color: white;
+    border-radius: 40px 40px 0 0;
+    min-height: 50vh;
+    margin-top: -100px;
+}
+
+.tabs {
+    padding: 6rem 6rem 3rem 6rem;
+  
+    .title-tab {
+      justify-content: space-between;
+      border-width: 0 !important;
+    }
+    .nav-item {
+      cursor: pointer;
+     .nav-link {
+        border-width: 0px;
+        border-radius: 0 ;
+        font-size: 1.3rem;
+        color: #C5C8CA;
+        text-decoration: none;
+        padding-bottom: 20px;
+
+        &.active {
+            color: black;
+            border-bottom: 3px solid #929CE5;
+          }
+          
+        &:hover {
+            color: rgb(141, 141, 141);
+            border-bottom: 3px solid rgb(182, 182, 182);
+        }
+     }
+    }
+
+    .title, .value {
+      font-size: 1.2rem;
+    }
+
+    .title {
+      font-weight: 400;
+    }
+
+    .value {
+      font-weight: 600;
+    }
+
+    .base-state {
+      font-size: 1.5rem;
+    }
+  
+}
+
+
