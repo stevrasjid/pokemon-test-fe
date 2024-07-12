@@ -5,7 +5,7 @@ import PokemonDetail from "./pages/PokemonDetail";
 
 function App() {
   return (
-    <Router basename="/pokemon-test-fe">
+    <Router>
       <Routes>
         <Route exact path="/" element={<PokemonList />} />
         <Route exact path="/pokemon/:id" element={<PokemonDetail />} />
